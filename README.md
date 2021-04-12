@@ -24,7 +24,7 @@ BAZEL_SH(Variable name): C:\msys64\usr\bin\bash.exe
 Download Tensorflow r2.4 from "https://github.com/tensorflow/tensorflow/tree/r2.4"
 Unzip the file.
 Configure the Tensorflow with install CUDA 11.1
-Run “configure.py”. Configure according to images shown below
+Run “configure.py”. Configure according to A,B,C,D,E,F steps
 
    A) First it asks location of Python. Press Enter to leave default value:
 
