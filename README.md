@@ -26,13 +26,16 @@ Unzip the file.
 Configure the Tensorflow with install CUDA 11.1
 Run “configure.py”. Configure according to images shown below
 
-![포맷변환 noname01](https://user-images.githubusercontent.com/20577227/114127469-66af1a00-9935-11eb-9e62-b4c4d598aca3.jpg)
-
-
+ A) First it asks location of Python. Press Enter to leave default value:
+ B) Then it asks about XLA JIT support. Press “n”:
+ C) Then it asks about ROCm support. We don’t need it if we choose CUDA support. Press “n”:
+ D) Then it asks about CUDA support: Press "Y"
+ E) Then Please specify optimization flags to use during compilation when bazel option "--config=opt" is specified [Default is /arch:AVX]: /arch:AVX2
+ F) Last question is about eigen. Press “y”.
 
 Run “D:\tensorflow-r2.4>bazel --output_base=D:/AI/tensorflow-r2.0 build --config=opt //tensorflow:tensorflow.dll”
 
-After “INFO: Build completed successfully, 8708 total actions”
+After “INFO: Build completed successfully, 8708 total actions” In my case....
 
 "D:\tensorflow-r2.4\bazel-bin\tensorflow” will have the “Tensorflow.dll”
 
