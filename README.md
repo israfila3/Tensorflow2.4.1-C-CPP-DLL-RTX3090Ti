@@ -26,17 +26,17 @@ Unzip the file.
 Configure the Tensorflow with install CUDA 11.1
 Run “configure.py”. Configure according to A,B,C,D,E,F steps
 
-   A) First it asks location of Python. Press Enter to leave default value:
+   * A) First it asks location of Python. Press Enter to leave default value:
 
-   B) Then it asks about XLA JIT support. Press “n”:
+   * B) Then it asks about XLA JIT support. Press “n”:
 
-   C) Then it asks about ROCm support. We don’t need it if we choose CUDA support. Press “n”:
+   * C) Then it asks about ROCm support. We don’t need it if we choose CUDA support. Press “n”:
 
-   D) Then it asks about CUDA support: Press "Y"
+   * D) Then it asks about CUDA support: Press "Y"
 
-   E) Then Please specify optimization flags to use during compilation when bazel option "--config=opt" is specified [Default is /arch:AVX]: /arch:AVX2
+   * E) Then Please specify optimization flags to use during compilation when bazel option "--config=opt" is specified [Default is /arch:AVX]: /arch:AVX2
 
-   F) Last question is about eigen. Press “y”.
+   * F) Last question is about eigen. Press “y”.
 
 Run “D:\tensorflow-r2.4>bazel --output_base=D:/AI/tensorflow-r2.0 build --config=opt //tensorflow:tensorflow.dll”
 
